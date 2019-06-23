@@ -9,7 +9,7 @@ class OutPut(object):
 
     def output_csv(self):
         # 結果を書き込むCSVのパスを指定
-        dir = os.environ['HOME'] + 'どこに置くかパスを指定する'
+        dir = os.environ['HOME'] + '/Desktop/qiita_safari/result.csv'
         # CSVファイル用のヘッダ
         csv_header = ["著者", "タイトル", "URL"]
         # 格納するデータをリスト型で宣言

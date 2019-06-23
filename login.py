@@ -4,9 +4,9 @@ def main(driver):
     # ログイン画面のURL
     url = "https://qiita.com/login?redirect_to=%2F"
     # user名
-    user = "shaia-66"
+    user = "XXXX"
     # パスワード
-    password = "Koamsoxng92jkf8366"
+    password = "YYYYYYYY"
 
     # ログイン画面を表示
     try:

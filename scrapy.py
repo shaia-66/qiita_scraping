@@ -5,8 +5,6 @@ class Scrapy(object):
     def __init__(self):
         # safariを用いる
         self.driver = webdriver.Safari()
-        # 3s待機
-        self.driver.implicitly_wait(3)
         # 開くURLを指定
         self.url_day  = "https://qiita.com/"
         self.url_week = "https://qiita.com/?scope=weekly"
@@ -16,7 +14,7 @@ class Scrapy(object):
 
     def get_trend_data(self):
         # Safariを用いてURLを開く
-        self.driver.get(self.url_week)
+        self.driver.get(self.url_day)
         """
          tr-Item_bodyというクラスの全情報を取得している(リスト型)
          ソースの表示ではなく、要素の確認をすることによって、より詳細な情報が取得できる

@@ -10,7 +10,7 @@ def main():
     # qiitaにログイン
     login.main(sc.driver)
     # 3s待機
-    # time.sleep(3)
+    time.sleep(3)
     # インスタンス内の関数呼び出し
     results = sc.get_trend_data()
     # OutPutに引数を与えて、インスタンスの生成
